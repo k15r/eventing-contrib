@@ -24,7 +24,7 @@ import (
 	"sync/atomic"
 	"time"
 
-	stan "github.com/nats-io/go-nats-streaming"
+	stan "github.com/nats-io/stan.go"
 	"go.uber.org/zap"
 	corev1 "k8s.io/api/core/v1"
 	"knative.dev/eventing-contrib/natss/pkg/stanutil"
