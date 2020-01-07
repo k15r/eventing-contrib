@@ -687,15 +687,20 @@
   version = "v1.7.2"
 
 [[projects]]
-  digest = "1:fc0bc63c2430301e10b5bf257707a601e46858b526ab6b07d8447d419a35909b"
+  digest = "1:5a2971cb8a8583171b6946bc82fa2cea3d79a77b7d50e831895decb28a805860"
   name = "github.com/nats-io/go-nats-streaming"
-  packages = [
-    ".",
-    "pb",
-  ]
+  packages = ["pb"]
   pruneopts = "NUT"
   revision = "7cd94c239033c0405a43454be55a0810d3a3ca89"
   version = "v0.4.4"
+
+[[projects]]
+  digest = "1:2a2300e9d1c7eee7b1c7bfab3cba485823c036620e63b68c0bdb2d3ba4ace216"
+  name = "github.com/nats-io/jwt"
+  packages = ["."]
+  pruneopts = "NUT"
+  revision = "0c3fc7aed8bb2534e7bfdf0968a75890402d48cd"
+  version = "v0.3.2"
 
 [[projects]]
   digest = "1:14e32c27cba8116b9b4df54cf50e16da79bf045505f4c9cb91e2fc9333ccaace"
@@ -712,6 +717,18 @@
   version = "v0.14.3"
 
 [[projects]]
+  digest = "1:8fdfe362fb878cfd0740ead278723a92af8668db959cbe3df58d679ac4dff7bd"
+  name = "github.com/nats-io/nats.go"
+  packages = [
+    ".",
+    "encoders/builtin",
+    "util",
+  ]
+  pruneopts = "NUT"
+  revision = "6063d679d23ae5b3edb4030d5e89a6e30ea53bc6"
+  version = "v1.9.1"
+
+[[projects]]
   digest = "1:d649fe8fa50df39a525a9acd9fa73a29f8097272467ca3830a2ebc1abcfb33e3"
   name = "github.com/nats-io/nkeys"
   packages = ["."]
@@ -726,6 +743,17 @@
   pruneopts = "NUT"
   revision = "4b96681fa6d28dd0ab5fe79bac63b3a493d9ee94"
   version = "v1.0.1"
+
+[[projects]]
+  digest = "1:126156bd358314dbe70004aa309e0b0c17a9358b6a4d4d989ec645007a744db6"
+  name = "github.com/nats-io/stan.go"
+  packages = [
+    ".",
+    "pb",
+  ]
+  pruneopts = "NUT"
+  revision = "e2d4c025a5eea41d9566dc8e978c7ee697470b64"
+  version = "v0.6.0"
 
 [[projects]]
   digest = "1:1a0de55901552615e2b2f24bdb51431634165e74745b042a3ec11c3e97ce5843"
@@ -2096,8 +2124,8 @@
     "github.com/gorilla/websocket",
     "github.com/kelseyhightower/envconfig",
     "github.com/knative/serving/pkg/apis/serving/v1beta1",
-    "github.com/nats-io/go-nats-streaming",
     "github.com/nats-io/nats-streaming-server/server",
+    "github.com/nats-io/stan.go",
     "github.com/robfig/cron",
     "github.com/slinkydeveloper/loadastic/common",
     "github.com/slinkydeveloper/loadastic/kafka",
